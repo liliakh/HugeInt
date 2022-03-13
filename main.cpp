@@ -5,13 +5,16 @@
 int main()
 {
     try {
-        HugeInt a(std::string("983514785412366227"));
-        HugeInt b(std::string("23452165"));
-        HugeInt c = a * b;
-        HugeInt d(125);
-        d += a;
-
+        HugeInt a(std::string("-39652108745"));
+        HugeInt b(std::string("1478965224156326988"));
+        HugeInt d(std::string("9854711425789136541"));
+        HugeInt c = (a + b);
+        a += d;
+        b -= d;
+        d *= a;
+        a.printValue();
         c.printValue();
+        b.printValue();
         d.printValue();
 
     }
